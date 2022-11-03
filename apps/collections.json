@@ -1,0 +1,10 @@
+{
+  "name": "Collectionist",
+  "description": "Share. Manage. Plan. Collect. There is a lot that goes on when you are trying to build your humble collection. Whether you have a mountain of models or a conglomeration of comics, sometimes it is hard to keep track of what you already own and what you're actively wanting to acquire. Most of all, you want to be able to easily show of your achievement. Let us help!",
+  "url": "https://collectionist.sense-list.com/",
+  "logo": "collections_logo.png",
+  "colors": {
+    "primary": "#0041fa",
+    "secondary": "#d01f10"
+  }
+}

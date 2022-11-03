@@ -1,0 +1,35 @@
+@mixin base-button($bgColor, $textColor) {
+  display: inline-block;
+  background-color: $bgColor;
+  color: $textColor;
+  border-radius: 7px;
+  border: 1px solid $textColor;
+  line-height: 20px;
+  text-decoration: none;
+  padding: 0.25em 0.75em;
+  min-width: 10ch;
+  min-height: 30px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.1;
+  transition: 220ms all ease-in-out;
+
+  &:hover {
+    @if $bgColor == transparent {
+      background-color: rgba($color: white, $alpha: 0.2);
+    } @else {
+      background-color: scale-color($bgColor, $lightness: -20%);
+    }
+  }
+}
+
+@mixin secondary-button {
+  @include base-button(transparent, white);
+}
+
+@mixin primary-button {
+  @include base-button(white, black);
+}

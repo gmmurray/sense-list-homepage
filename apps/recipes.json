@@ -1,0 +1,10 @@
+{
+  "name": "Recipe Book",
+  "description": "A wise man once said \"I like food\" and we definitely agree. Want to make it yourself? You are probably following a recipe. Recipe Book will help you organize those recipes into custom categories. You can save details about each recipe including where you got it and what you'd rate it. ",
+  "url": "https://recipes.gmurray.dev/",
+  "logo": "recipes_logo.png",
+  "colors": {
+    "primary": "#59C3C3",
+    "secondary": "#f05365"
+  }
+}

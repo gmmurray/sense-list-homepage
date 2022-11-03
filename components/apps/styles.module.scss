@@ -1,0 +1,52 @@
+@use 'styles/variables';
+
+.wrapper {
+  height: variables.$available-height;
+  width: 100%;
+  box-shadow: variables.$blur-box-shadow;
+  display: flex;
+  align-items: center;
+}
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+
+  @media only screen and (min-width: variables.$breakpoint-md) {
+    align-items: unset;
+    padding-left: 15%;
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media only screen and (min-width: variables.$breakpoint-md) {
+    flex-direction: row;
+    align-items: start;
+  }
+}
+
+.logo {
+  width: 25vw;
+  max-width: 200px;
+  height: 25vw;
+  max-height: 200px;
+}
+
+.content-container {
+  margin: 2rem;
+  text-align: center;
+  @media only screen and (min-width: variables.$breakpoint-md) {
+    margin: 0 6rem;
+    text-align: left;
+  }
+}
+
+.button {
+  margin-left: 2rem;
+}

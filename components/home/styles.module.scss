@@ -1,0 +1,78 @@
+@use 'styles/variables';
+
+$preview-row-height: 70vh;
+$title-row-height: calc(variables.$available-height - $preview-row-height);
+$home-content-padding: 1rem;
+
+.home {
+  min-height: 90vh;
+  box-sizing: border-box;
+}
+
+.title-row {
+  min-height: $title-row-height;
+  color: white;
+  padding: $home-content-padding;
+  padding-bottom: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-end;
+
+  div {
+    text-align: center;
+    width: 100%;
+
+    h1 {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.app-preview-row {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: $home-content-padding;
+}
+
+.app-preview-container {
+  width: 100%;
+  box-sizing: border-box;
+  height: calc($preview-row-height - 2 * $home-content-padding);
+  padding: $home-content-padding;
+
+  @media only screen and (min-width: variables.$breakpoint-md) {
+    width: 50%;
+  }
+}
+
+.content {
+  border-radius: variables.$border-radius;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.card {
+  box-sizing: border-box;
+  min-height: 50%;
+  min-width: 50%;
+  box-shadow: variables.$blur-box-shadow;
+  border-radius: variables.$border-radius;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+
+  div {
+    width: 100%;
+    text-align: center;
+
+    h3 {
+      color: white;
+      margin: 0;
+    }
+  }
+}

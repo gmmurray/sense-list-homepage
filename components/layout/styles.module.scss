@@ -1,0 +1,40 @@
+@use 'styles/variables';
+
+.page {
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding-bottom: variables.$footer-height;
+}
+
+.content {
+  min-height: variables.$available-height;
+}
+
+.footer {
+  height: variables.$footer-height;
+  background-color: #1b1b1b;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.github {
+  font-size: xx-large;
+
+  a {
+    color: white;
+  }
+}
+
+.copyright {
+  font-size: small;
+
+  p {
+    margin: 0;
+  }
+}
